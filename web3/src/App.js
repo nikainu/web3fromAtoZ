@@ -1,37 +1,24 @@
 import './App.css';
-import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
 
 function Character( {value}) {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   var str = 'images/' + value + '.png'
   var explanation = texts[value]
   var title = titles[value]
+
   return <>
-      <Modal
-          show={show}
-          onHide={handleClose}
-          keyboard={true}
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>{title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {explanation}
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="primary">Ok</Button>
-        </Modal.Footer>
-      </Modal>
-      <div className="container">
-        <img src={str} alt={value} onClick={handleShow}/>
+    <div class="box">
+      <img src={str}/>
+      <div class="box-content">
+        <h3 class="title">{title}</h3>
+        <span class="post">{explanation}</span>
       </div>
+      <ul class="icon">
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+        <li><a href="#"><i class="fa fa-link"></i></a></li>
+      </ul>
+    </div>
     </>
 }
 

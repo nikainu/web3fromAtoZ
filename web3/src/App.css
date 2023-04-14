@@ -16,11 +16,6 @@
   margin-bottom: 5em;
 }
 
-.container {
-  margin: auto;
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -54,4 +49,102 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.box{
+  background: #0a212f;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+.box img{
+  width: 100%;
+  height: auto;
+  transition: all 0.5s;
+}
+.box:hover img{
+  opacity: 0.2;
+  filter: blur(3px);
+  transform: scale(1.1);
+}
+.box-content{
+  color: #fff;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: all 0.4s ease 0s;
+}
+.box:hover .box-content{ opacity: 1; }
+.box .title{
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 0 0 8px;
+}
+.box .title:after{
+  content: '';
+  height: 7px;
+  width: 130px;
+  margin: 8px auto 0;
+  border: 2px solid #fff;
+  border-left: none;
+  border-right: none;
+  clear: both;
+  display: block;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease 0s;
+}
+.box:hover .title:after{
+  opacity: 0.5;
+  transform: scale(1);
+}
+.box .post{
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  display: block;
+}
+.box .icon{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transform: translateX(-50%) scale(0);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transition: all 0.5s linear;
+}
+.box:hover .icon{ transform: translateX(-50%) scale(1); }
+.box .icon li{
+  margin: 0 2px;
+  display: inline-block;
+}
+.box .icon li a{
+  color: #fff;
+  font-size: 14px;
+  line-height: 33px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.4s ease 0s;
+}
+.box .icon li a:hover{
+  color:#fff;
+  background-color: #f83600;
+  text-shadow: 2px 2px  4px #0a212f;
+}
+@media only screen and (max-width:990px){
+  .box{ margin: 0 0 30px; }
 }
