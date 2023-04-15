@@ -45,6 +45,26 @@
   font-size: 200%;
 }
 
+.noteheader {
+  font-size: 400%;
+  font-family: 'DM Serif Display', serif;
+}
+
+.notesubheader {
+  font-size: 250%;
+}
+.note {
+  text-align: center;
+  background-color: lightsalmon;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
+  min-height: 200%;
+  color: black;
+  margin: 0;
+}
+
 .footer {
   text-align: center;
   font-size: 200%;
@@ -88,7 +108,7 @@
 }
 
 .modal .modal-body {
-  background-color: rgb(48, 47, 47);
+  background-color: rgb(0,8,49);
   color: white;
   font-size: 150%;
   padding: 5%;

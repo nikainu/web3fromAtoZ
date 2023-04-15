@@ -50,6 +50,10 @@ function App() {
         </div>
         <img src="images/monster.png" height="500" width="auto"/>
       </div>
+      <div className='note'>
+      <h1 className='noteheader'> How do I get started?</h1>
+      <h2 className='notesubheader'> Click the letters below for an explanation of common web3 terms </h2>
+      </div>
       <div className="flexbox-container">
         <Character value="A" />
         <Character value="B" />
