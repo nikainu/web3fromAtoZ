@@ -4,7 +4,7 @@
 }
 
 .background-grey {
-  background-color: gray;
+  background-color: #434fae;
   display: flex;
   flex-direction: column;
 }
@@ -14,6 +14,26 @@
   flex-direction: row;
   margin-top: 5em;
   margin-bottom: 5em;
+}
+
+.flexbox-header {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin: 10%;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  font-size: 400%;
+}
+
+.subheader {
+  text-align: center;
+  color: white;
+  font-size: 200%;
 }
 
 .App-logo {
@@ -52,7 +72,6 @@
 }
 
 .box{
-  background: #0a212f;
   font-family: 'Raleway', sans-serif;
   text-align: center;
   overflow: hidden;
