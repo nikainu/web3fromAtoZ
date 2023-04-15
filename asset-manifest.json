@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/web3fromatoz/static/css/main.25bca081.css",
+    "main.js": "/web3fromatoz/static/js/main.aaf814f3.js",
+    "static/js/787.b4286391.chunk.js": "/web3fromatoz/static/js/787.b4286391.chunk.js",
+    "index.html": "/web3fromatoz/index.html",
+    "main.25bca081.css.map": "/web3fromatoz/static/css/main.25bca081.css.map",
+    "main.aaf814f3.js.map": "/web3fromatoz/static/js/main.aaf814f3.js.map",
+    "787.b4286391.chunk.js.map": "/web3fromatoz/static/js/787.b4286391.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25bca081.css",
+    "static/js/main.aaf814f3.js"
+  ]
+}
