@@ -1,28 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import React, { useState } from 'react';
-
-function Character2( {value}) {
-  var str = 'images/' + value + '.png'
-  var explanation = texts[value]
-  var title = titles[value]
-
-  return <>
-    <div class="box">
-      <img src={str}/>
-      <div class="box-content">
-        <h3 class="title">{title}</h3>
-        <span class="post">{explanation}</span>
-      </div>
-      <ul class="icon">
-        <li><a href="#"><i class="fa fa-search"></i></a></li>
-        <li><a href="#"><i class="fa fa-link"></i></a></li>
-      </ul>
-    </div>
-    </>
-}
 
 function Character( {value}) {
   const [show, setShow] = useState(false);
@@ -33,6 +12,7 @@ function Character( {value}) {
   var str = 'images/' + value + '.png'
   var explanation = texts[value]
   var title = titles[value]
+  var link = links[value]
   return <>
       <Modal
           show={show}
@@ -40,11 +20,12 @@ function Character( {value}) {
           keyboard={true}
           centered
       >
-        <Modal.Header closeButton>
-          <Modal.Title><h2 className='subheader'> {title} </h2></Modal.Title>
-        </Modal.Header>
         <Modal.Body>
-          {explanation}
+        <h1 className='title'> {title} </h1>
+        <h2 className='body'> {explanation} </h2>
+        <a href={link} target="_blank">
+          <button class="button-18" role="button">More Info</button>
+        </a>
         </Modal.Body>
       </Modal>
       <div className="container">
@@ -60,6 +41,8 @@ function App() {
       <div className="flexbox-header">
         <div>
           <h1 className='header'>Web3 from A to Z</h1>
+          <br/>
+          <br/>
           <h2 className='subheader'> This website provides easy to understand explanations for basic web3 terminology to let you dive into blockchain and crypto.</h2>
         </div>
         <img src="images/monster.png" height="500" width="auto"/>
@@ -137,11 +120,11 @@ links["D"] = ""
 
 titles["E"] = "Ethereum Improvement Proposal"
 texts["E"] = "Ethereum Improvement Proposals (EIPs) are standards specifying potential new features or processes for Ethereum. EIPs contain technical specifications for the proposed changes and act as the “source of truth” for the community. Network upgrades and application standards for Ethereum are discussed and developed through the EIP process."
-links[""] = "https://ethereum.org/en/eips/"
+links["E"] = "https://ethereum.org/en/eips/"
 
 titles["F"] = "Fork"
 texts["F"] = "Forks happen when major technical upgrades or changes need to be made to the network. They typically stem from Ethereum Improvement Proposals (EIPs) and change the \"rules\" of the protocol. All participants need to choose between the forks by running either the old or an updated version of the node software."
-links[""] = "https://ethereum.org/en/history/#accordion-button-:R40slalaeiau:"
+links["F"] = "https://ethereum.org/en/history/#accordion-button-:R40slalaeiau:"
 
 titles["G"] = "Gas"
 texts["G"] = "Gas is a unit that measures computational effort required to execute specific operations on the Ethereum network, for example adding two numbers costs 3 gas. Gas price refers to the price a user is willing to pay per unit of gas. The cost of a transaction is calculated as gas * gasPrice."
@@ -149,23 +132,23 @@ links["G"] = "https://ethereum.org/en/developers/docs/gas/"
 
 titles["H"] = "Hash"
 texts["H"] = "Cryptographic hash functions are an important cryptographic tool and form a separate area in cryptography. Cryptographic hash functions generate a character string with a fixed length from arbitrarily long data records and serve like a digital fingerprint."
-links[""] = ""
+links["H"] = ""
 
 titles["I"] = "Issuance"
 texts["I"] = "The issuance of ETH is the process of creating ETH that did not previously exist. The burning of ETH is when existing ETH gets destroyed, removing it from circulation. The rate of issuance and burning gets calculated on several parameters, and the balance between them determines the resulting inflation/deflation rate of ether."
-links[""] = "https://ethereum.org/en/roadmap/merge/issuance/#components-of-eth-issuance"
+links["I"] = "https://ethereum.org/en/roadmap/merge/issuance/#components-of-eth-issuance"
 
 titles["J"] = "Journey"
 texts["J"] = ""
-links[""] = "https://ethereum.org/en/guides/#ethereum-guides"
+links["J"] = "https://ethereum.org/en/guides/#ethereum-guides"
 
 titles["K"] = "Key"
 texts["K"] = "Ethereum is based on public private key cryptography. Each party has two keys: a public key and a private key. The public key is accessible to everyone. The private key remains secret. Transactions are signed with the private key to prove ownership of the funds"
-links[""] = "https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/keys/"
+links["K"] = "https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/keys/"
 
 titles["L"] = "Layer 2"
 texts["L"] = "Layer 2 (L2) is a collective term to describe a specific set of Ethereum scaling solutions. A layer 2 is a separate system that extends Ethereum and inherits the security guarantees of Ethereum."
-links[""] = "https://ethereum.org/en/layer-2/"
+links["L"] = "https://ethereum.org/en/layer-2/"
 
 titles["M"] = "Mainnet"
 texts["M"] = "When people and exchanges discuss ETH prices, they're talking about the main blockchain. Mainnet ETH. Mainnet is the primary public Ethereum production blockchain, where actual-value transactions occur on the distributed ledger."
@@ -177,7 +160,7 @@ links["N"] = "https://ethereum.org/en/developers/docs/nodes-and-clients/"
 
 titles["O"] = "Oracles"
 texts["O"] = "Oracles are applications that source, verify, and transmit external information (i.e. information stored off-chain) to smart contracts running on the blockchain. Besides “pulling” off-chain data and broadcasting it on Ethereum, oracles can also “push” information from the blockchain to external systems. An example of the latter could be an oracle that unlocks a smart lock once the user sends the fee via an Ethereum transaction. Oracles act as a “bridge” connecting smart contracts on blockchains to off-chain data providers."
-links[""] = "https://ethereum.org/en/developers/docs/oracles/"
+links["O"] = "https://ethereum.org/en/developers/docs/oracles/"
 
 titles["P"] = "Proof of Stake"
 texts["P"] = "Proof-of-Stake is the consensus mechanism used by Ethereum. In proof-of-work, miners prove they have capital at risk by expending energy. In proof-of-stake validators explicitly stake capital in the form of ETH into a smart contract on Ethereum. This staked ETH then acts as collateral that can be destroyed if the validator behaves dishonestly or lazily. The validator is responsible for checking that new blocks propagated over the network are valid and occasionally creating and propagating new blocks themselves."

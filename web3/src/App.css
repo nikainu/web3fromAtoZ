@@ -24,20 +24,24 @@
 .flexbox-header {
   display: flex;
   flex-direction: row;
-  background-color: green;
-  padding: 20%;
+  background-color: lightblue;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
   min-height: 200%;
+  color: black;
+  margin: 0;
 }
 
 .header {
   text-align: center;
-  color: white;
-  font-size: 400%;
+  font-size: 350%;
+  font-weight: bold;
 }
 
 .subheader {
   text-align: center;
-  color: white;
   font-size: 200%;
 }
 
@@ -76,127 +80,77 @@
   }
 }
 
-.box{
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  margin: auto;
-  text-align: center;
-}
-.box img{
-  width: 100%;
-  height: auto;
-  transition: all 0.5s;
-}
-.box:hover img{
-  opacity: 0.2;
-  filter: blur(3px);
-  transform: scale(1.1);
-}
-.box-content{
-  color: #fff;
-  width: 100%;
-  opacity: 0;
-  transform: translateY(-50%);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transition: all 0.4s ease 0s;
-}
-.box:hover .box-content{ opacity: 1; }
-.box .title{
-  font-size: 50px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  margin: 0 0 8px;
-}
-.box .title:after{
-  content: '';
-  height: 7px;
-  width: 130px;
-  margin: 8px auto 0;
-  border: 2px solid #fff;
-  border-left: none;
-  border-right: none;
-  clear: both;
-  display: block;
-  opacity: 0;
-  transform: scale(0);
-  transition: all 0.4s ease 0s;
-}
-.box:hover .title:after{
-  opacity: 0.5;
-  transform: scale(1);
-}
-.box .post{
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-transform: capitalize;
-  display: block;
-}
-.box .icon{
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  transform: translateX(-50%) scale(0);
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transition: all 0.5s linear;
-}
-.box:hover .icon{ transform: translateX(-50%) scale(1); }
-.box .icon li{
-  margin: 0 2px;
-  display: inline-block;
-}
-.box .icon li a{
-  color: #fff;
-  font-size: 14px;
-  line-height: 33px;
-  width: 35px;
-  height: 35px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  display: block;
-  transition: all 0.4s ease 0s;
-}
-.box .icon li a:hover{
-  color:#fff;
-  background-color: #f83600;
-  text-shadow: 2px 2px  4px #0a212f;
-}
-@media only screen and (max-width:990px){
-  .box{ margin: 0 0 30px; }
-}
-
-.modal-header {
-  background-color: rgb(48, 47, 47);
-  color: white;
-  font-size: 300%;
-  text-align: center;
-}
-
-.modal-title {
-  font-size: 300%;
-  text-align: center;
-  margin-left: 3em;
-}
-
-.modal-body {
+.modal .modal-body {
   background-color: rgb(48, 47, 47);
   color: white;
   font-size: 150%;
-  margin: 2em;
+  padding: 5%;
+  border: 0;
 }
 
-.modal-content {
+.modal .modal-content {
   left: -50%;
   min-width: 200%;
   background-color: rgb(48, 47, 47);
   --bs-modal-bg: rgb(48, 47, 47);
   font-size: large;
+  border: 0;
+}
+
+.title {
+  font-size: 200%;
+  padding-top: 20px;
+}
+
+.body {
+  font-size: 150%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* CSS */
+.button-18 {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 480px;
+  min-height: 50px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
 }
