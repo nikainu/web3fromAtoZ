@@ -103,7 +103,7 @@ titles["D"] = "Decentralization"
 texts["D"] = "Decentralization is one of the core philosophies of web3. It means that there is no central body that controls the processes and can make decisions."
 links["D"] = ""
 
-titles["E"] = "Ethereum Improvement Protocol"
+titles["E"] = "Ethereum Improvement Proposal"
 texts["E"] = "Ethereum Improvement Proposals (EIPs) are standards specifying potential new features or processes for Ethereum. EIPs contain technical specifications for the proposed changes and act as the “source of truth” for the community. Network upgrades and application standards for Ethereum are discussed and developed through the EIP process."
 links[""] = "https://ethereum.org/en/eips/"
 
