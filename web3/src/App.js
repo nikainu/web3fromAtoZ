@@ -116,7 +116,7 @@ links["C"] = "https://ethereum.org/en/developers/docs/consensus-mechanisms/"
 
 titles["D"] = "Decentralization"
 texts["D"] = "Decentralization is one of the core philosophies of web3. It means that there is no central body that controls the processes and can make decisions."
-links["D"] = ""
+links["D"] = "https://ethereum.org/en/governance/#decentralized-governance"
 
 titles["E"] = "Ethereum Improvement Proposal"
 texts["E"] = "Ethereum Improvement Proposals (EIPs) are standards specifying potential new features or processes for Ethereum. EIPs contain technical specifications for the proposed changes and act as the “source of truth” for the community. Network upgrades and application standards for Ethereum are discussed and developed through the EIP process."
