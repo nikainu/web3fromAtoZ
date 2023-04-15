@@ -109,7 +109,7 @@ links[""] = "https://ethereum.org/en/eips/"
 
 titles["F"] = "Fork"
 texts["F"] = "Forks happen when major technical upgrades or changes need to be made to the network. They typically stem from Ethereum Improvement Proposals (EIPs) and change the \"rules\" of the protocol. All participants need to choose between the forks by running either the old or an updated version of the node software."
-links[""] = ""
+links[""] = "https://ethereum.org/en/history/#accordion-button-:R40slalaeiau:"
 
 titles["G"] = "Gas"
 texts["G"] = "Gas is a unit that measures computational effort required to execute specific operations on the Ethereum network, for example adding two numbers costs 3 gas. Gas price refers to the price a user is willing to pay per unit of gas. The cost of a transaction is calculated as gas * gasPrice."
@@ -123,9 +123,9 @@ titles["I"] = "Issuance"
 texts["I"] = "The issuance of ETH is the process of creating ETH that did not previously exist. The burning of ETH is when existing ETH gets destroyed, removing it from circulation. The rate of issuance and burning gets calculated on several parameters, and the balance between them determines the resulting inflation/deflation rate of ether."
 links[""] = "https://ethereum.org/en/roadmap/merge/issuance/#components-of-eth-issuance"
 
-titles["J"] = ""
+titles["J"] = "Journey"
 texts["J"] = ""
-links[""] = ""
+links[""] = "https://ethereum.org/en/guides/#ethereum-guides"
 
 titles["K"] = "Key"
 texts["K"] = "Ethereum is based on public private key cryptography. Each party has two keys: a public key and a private key. The public key is accessible to everyone. The private key remains secret. Transactions are signed with the private key to prove ownership of the funds"
