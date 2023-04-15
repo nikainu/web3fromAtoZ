@@ -12,6 +12,11 @@
 
 .container {
   text-align: center;
+  transition: transform .5s;
+}
+
+.container:hover {
+  transform: scale(1.2); 
 }
 
 .flexbox-container {

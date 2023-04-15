@@ -28,7 +28,7 @@ function Character( {value}) {
         </a>
         </Modal.Body>
       </Modal>
-      <div className="container">
+      <div class="container">
         <img src={str} alt={value} onClick={handleShow} height="300" width="auto"/>
       </div>
     </>
