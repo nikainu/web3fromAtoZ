@@ -38,6 +38,9 @@ function Character( {value}) {
 function App() {
   return (
     <div className={'background-grey'}>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"></link>
       <div className="flexbox-header">
         <div>
           <h1 className='header'>Web3 from A to Z</h1>
