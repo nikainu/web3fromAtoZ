@@ -94,6 +94,11 @@ function App() {
         <Character value="Y" />
         <Character value="Z" />
       </div>
+      <div className='footer'>
+        Made by <a href="https://github.com/nikainu">@nikainu</a> and <a href="https://github.com/mariusvanderwijden">@vdwijden</a>
+        <br></br>
+        Font by <a href="https://www.freepik.com/vectors/geometric-font">rawpixel.com</a> on Freepik
+      </div>
       </div>
   );
  
@@ -135,14 +140,14 @@ links["G"] = "https://ethereum.org/en/developers/docs/gas/"
 
 titles["H"] = "Hash"
 texts["H"] = "Cryptographic hash functions are an important cryptographic tool and form a separate area in cryptography. Cryptographic hash functions generate a character string with a fixed length from arbitrarily long data records and serve like a digital fingerprint."
-links["H"] = ""
+links["H"] = "https://www.investopedia.com/terms/h/hash.asp"
 
 titles["I"] = "Issuance"
 texts["I"] = "The issuance of ETH is the process of creating ETH that did not previously exist. The burning of ETH is when existing ETH gets destroyed, removing it from circulation. The rate of issuance and burning gets calculated on several parameters, and the balance between them determines the resulting inflation/deflation rate of ether."
 links["I"] = "https://ethereum.org/en/roadmap/merge/issuance/#components-of-eth-issuance"
 
 titles["J"] = "Journey"
-texts["J"] = ""
+texts["J"] = "Everyone's journey in web3 is different, we need developers, community managers, project leaders, thinkers, talkers, listeners, etc. Start your web3 journey now!"
 links["J"] = "https://ethereum.org/en/guides/#ethereum-guides"
 
 titles["K"] = "Key"
@@ -186,7 +191,7 @@ texts["T"] = "An Ethereum transaction refers to an action initiated by an extern
 links["T"] = "https://ethereum.org/en/developers/docs/transactions/"
 
 titles["U"] = "Community"
-texts["U"] = ""
+texts["U"] = "Ethereum consists of thousands of developers, technologists, designers, users and thinkers. Making sure web3 is an inclusive space without borders for everyone is crucial for its success."
 links["U"] = "https://ethereum.org/en/community/"
 
 titles["V"] = "Validator"
@@ -202,11 +207,9 @@ texts["X"] = "Addresses are required to send and receive transactions on the blo
 links["X"] = "https://ethereum.org/en/wallets/"
 
 titles["Y"] = "Y (Why)"
-texts["Y"] = ""
+texts["Y"] = "Why are we doing this? Everyone has their own motives, but some common goals are decentralization, censorship resistance and self-reliance."
 links["Y"] = "https://ethereum.org/en/what-is-ethereum/"
 
 titles["Z"] = "Zero Knowledge"
 texts["Z"] = "A zero-knowledge protocol is a method by which one party (the prover) can prove to another party (the verifier) that something is true, without revealing any information apart from the fact that this specific statement is true."
 links["Z"] = "https://ethereum.org/en/developers/docs/scaling/zk-rollups/"
-
-//<a href="https://www.freepik.com/vectors/geometric-font">Image by rawpixel.com</a> on Freepik
