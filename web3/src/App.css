@@ -4,9 +4,14 @@
 }
 
 .background-grey {
-  background-color: #434fae;
+  background-color: rgb(48, 47, 47);
   display: flex;
   flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  text-align: center;
 }
 
 .flexbox-container {
@@ -19,9 +24,9 @@
 .flexbox-header {
   display: flex;
   flex-direction: row;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin: 10%;
+  background-color: green;
+  padding: 20%;
+  min-height: 200%;
 }
 
 .header {
@@ -101,7 +106,7 @@
 }
 .box:hover .box-content{ opacity: 1; }
 .box .title{
-  font-size: 23px;
+  font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -127,7 +132,7 @@
   transform: scale(1);
 }
 .box .post{
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: capitalize;
@@ -166,4 +171,32 @@
 }
 @media only screen and (max-width:990px){
   .box{ margin: 0 0 30px; }
+}
+
+.modal-header {
+  background-color: rgb(48, 47, 47);
+  color: white;
+  font-size: 300%;
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 300%;
+  text-align: center;
+  margin-left: 3em;
+}
+
+.modal-body {
+  background-color: rgb(48, 47, 47);
+  color: white;
+  font-size: 150%;
+  margin: 2em;
+}
+
+.modal-content {
+  left: -50%;
+  min-width: 200%;
+  background-color: rgb(48, 47, 47);
+  --bs-modal-bg: rgb(48, 47, 47);
+  font-size: large;
 }

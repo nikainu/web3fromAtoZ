@@ -1,8 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import React, { useState } from 'react';
 
-function Character( {value}) {
-
+function Character2( {value}) {
   var str = 'images/' + value + '.png'
   var explanation = texts[value]
   var title = titles[value]
@@ -22,6 +24,36 @@ function Character( {value}) {
     </>
 }
 
+function Character( {value}) {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  var str = 'images/' + value + '.png'
+  var explanation = texts[value]
+  var title = titles[value]
+  return <>
+      <Modal
+          show={show}
+          onHide={handleClose}
+          keyboard={true}
+          centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title><h2 className='subheader'> {title} </h2></Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {explanation}
+        </Modal.Body>
+      </Modal>
+      <div className="container">
+        <img src={str} alt={value} onClick={handleShow} height="300" width="auto"/>
+      </div>
+    </>
+}
+
+
 function App() {
   return (
     <div className={'background-grey'}>
@@ -30,7 +62,7 @@ function App() {
           <h1 className='header'>Web3 from A to Z</h1>
           <h2 className='subheader'> This website provides easy to understand explanations for basic web3 terminology to let you dive into blockchain and crypto.</h2>
         </div>
-        <img src="images/monster.png"/>
+        <img src="images/monster.png" height="500" width="auto"/>
       </div>
       <div className="flexbox-container">
         <Character value="A" />
